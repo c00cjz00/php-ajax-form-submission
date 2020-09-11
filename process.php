@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
+/*error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
 try {
     $PDO = new \PDO('mysql:dbname=database_name;host=server_name;port=3306', 'user_id', 'password');
 } catch (\PDOException $Exception) {
@@ -17,5 +17,6 @@ if ($Prepared !== false) {
     $Query = false;
 }
 
-echo $Query ? 'Working good' : 'Error';
+echo $Query ? 'Working good' : 'Error';*/
+shell_exec("/usr/bin/php run.php >> tmp/paging.log &");
 ?>
