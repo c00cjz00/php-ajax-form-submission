@@ -25,7 +25,7 @@ $.post("process.php",{
 				paddingBottom:'show'
 			});
 			
-				$('#alert').fadeTo(2000,500).slideUp(500,function(){ //fade out
+				$('#alert').fadeTo(4000,500).slideUp(500,function(){ //fade out
 					$('#alert').addClass('hiden'); //adds a class .hidden
 				});
 		
